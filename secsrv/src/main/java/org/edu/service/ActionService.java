@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActionService {
 
-
     @KafkaListener(topics = "First_Microservice", groupId = "first")
     public void messagePull(String message){
         System.out.println("Received message = " + message);
