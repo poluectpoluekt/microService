@@ -1,0 +1,5 @@
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER}
+    consumer:
+      auto-offset-reset: earliest
