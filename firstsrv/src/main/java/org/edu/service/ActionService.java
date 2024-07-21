@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActionService {
 
-    private final KafkaTemplate<String, Object> kafkaTemplate;
+    private final KafkaTemplate<String, KafkaMessage> kafkaTemplate;
     private final NewTopic topic;
 
     public void send(KafkaMessageDto kafkaMessageDto){

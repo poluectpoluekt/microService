@@ -1,5 +1,6 @@
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_BROKER}
-    consumer:
-      auto-offset-reset: earliest
+
+server:
+  port: 8081
